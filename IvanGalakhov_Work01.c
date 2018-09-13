@@ -10,7 +10,8 @@
 // problem 1
 int problem1(){
   int sum = 0;
-  for(int i = 1; i < 1000; i++){
+  int i = 0;
+  for(i = 1; i < 1000; i++){
     if (i % 5 == 0 || i % 3 == 0){
       sum += i;
     }
@@ -48,7 +49,8 @@ int is_prime(int n){
 int problem3(){
   long num = 600851475143;
   int largest = 1;
-  for(int i = 3; i < sqrt(num); i += 2){
+  int i = 0;
+  for(i = 3; i < sqrt(num); i += 2){
     if(is_prime(i) && num % i == 0){
       largest = i;
     }
@@ -59,7 +61,8 @@ int problem3(){
 
 //helper
 int problem5_helper(int n){
-  for(int si = 1; i < 21; i++){
+  int i = 1;
+  for(i = 1; i < 21; i++){
     if(n % i > 0){
       return 1;
     }
